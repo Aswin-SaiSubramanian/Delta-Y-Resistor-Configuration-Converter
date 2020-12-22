@@ -34,6 +34,6 @@ example: YtoD(0.333333,1,0.5)
 
 DtoY and YtoD take care of computations for resistor configuration conversions in each direction, while DRAW_TRIANGLE_AND_Y takes care of graphical output.
 
-![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/DeltaY_Converter_Dependancy_Tree.pdf "Project dependency tree")
+
 
                    
