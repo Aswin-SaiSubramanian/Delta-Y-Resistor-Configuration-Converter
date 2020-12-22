@@ -7,7 +7,7 @@ to download are in the folder *src/Delta_Y_Converter*.
 
 From left to right, the following image depicts delta and y resistor configurations, respectively.
 
-![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/images/delta_y.png "delta and y resitor networks")
+![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/images/delta_y.png "source: https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-delta-wye-resistor-networks")
 
 ## Usage
 
