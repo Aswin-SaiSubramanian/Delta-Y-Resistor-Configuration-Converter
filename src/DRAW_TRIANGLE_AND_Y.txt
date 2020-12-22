@@ -1,0 +1,50 @@
+EXPORT DRAW_TRIANGLE_AND_Y(DtoY,
+   ra, rb, rc,
+   r1, r2, r3)
+// Graphics for DtoY and YtoD programs.
+// Assumes: medium font size,
+//          number format of four
+//             significant digits plus
+//             power of 10 ("eX"). 
+BEGIN
+   RECT();
+   // top left pixel is (0,0),
+   // bottom right pixel is (318, 240)
+
+   // draw upside down triangle
+   LINE_P(39, 80, 119, 80);
+   LINE_P(39, 80, 79, 160);
+   LINE_P(79, 160, 119, 80);
+
+   // draw Y
+   LINE_P(248, 120, 208, 80);
+   LINE_P(248, 120, 288, 80);
+   LINE_P(248, 120, 248, 160);
+
+   // display resistance labels
+   LOCAL rab, rbc, rca;
+   IF DtoY==1 THEN
+      rab:=r1; rbc:=r2; rca:=r3;
+      TEXTOUT_P(ra, 60, 60, 2);
+      TEXTOUT_P(rb, 10, 120, 2);
+      TEXTOUT_P(rc, 99, 120, 2);
+      TEXTOUT_P(rab, 170, 100, 2, RGB(0,0,255));
+      TEXTOUT_P(rca, 270, 100, 2, RGB(0,0,255));
+      TEXTOUT_P(rbc, 250, 140, 2, RGB(0,0,255));
+      TEXTOUT_P("Delta to", 150, 20, 2);
+      TEXTOUT_P("Y", 195, 20, 2, RGB(0,0,255));
+   ELSE
+      rca:=r1; rab:=r2; rbc:=r3;
+      TEXTOUT_P(rca, 60, 60, 2, RGB(0,0,255));
+      TEXTOUT_P(rab, 10, 120, 2, RGB(0,0,255));
+      TEXTOUT_P(rbc, 99, 120, 2, RGB(0,0,255));
+      TEXTOUT_P(ra, 170, 100, 2);
+      TEXTOUT_P(rc, 270, 100, 2);
+      TEXTOUT_P(rb, 250, 140, 2);
+      TEXTOUT_P("Y to", 150, 20, 2);
+      TEXTOUT_P("delta", 175, 20, 2, RGB(0,0,255));   
+   END;
+ 
+
+   FREEZE;
+END;

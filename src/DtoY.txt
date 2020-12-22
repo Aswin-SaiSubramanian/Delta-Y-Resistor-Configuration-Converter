@@ -1,0 +1,17 @@
+EXPORT DtoY(ra,rb,rc)
+BEGIN
+   // Upside down triangle, ra on top.
+   // rb and rc CCW from ra.
+   LOCAL rab, rbc, rca, sum;
+   sum:= ra + rb + rc;
+   rab:=(ra*rb)/sum;
+   rbc:=(rb*rc)/sum;
+   rca:=(rc*ra)/sum;
+
+   // draw upside down triangle and Y.
+   DRAW_TRIANGLE_AND_Y(1,ra,rb,rc,rab,rbc,rca); 
+
+   // Y resistance values CCW from top
+   // left segment.
+   RETURN({rab,rbc,rca}); 
+END;

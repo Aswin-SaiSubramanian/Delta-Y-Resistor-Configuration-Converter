@@ -1,0 +1,28 @@
+EXPORT YtoD(ra,rb,rc)
+ // Y resistances (ra,rb,rc) CCW from 
+ // top left segment.
+BEGIN
+ // converting resistances to
+ // conductances, and taking their sum.
+ LOCAL ga, gb, gc, gsum;
+ ga:=1/ra; gb:=1/rb; gc:=1/rc;
+ gsum:=ga+gb+gc;
+ 
+ // Finding equivalent delta resistances
+ // by taking inverse of
+ // "with conductances, multiply 
+ // adjacents, and divide by sum." 
+ LOCAL rca, rab, rbc;
+ rca:=gsum/(gc*ga);
+ rab:=gsum/(ga*gb);
+ rbc:=gsum/(gb*gc);
+
+ // Draw upside down triangle and Y
+ DRAW_TRIANGLE_AND_Y(2, ra, rb, rc, rca, rab, rbc);
+
+ // Equivalent delta (upside down
+ // triangle) resistances, {rca,rab,rbc},
+ // CCW from top segment.
+ RETURN({rca,rab,rbc});
+
+END;
