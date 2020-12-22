@@ -1,6 +1,6 @@
 # Delta-Y Resistor Configuration Converter
 
-A set of HP Prime programs to convert between delta and y resistor configurations, and display the result graphically.
+A set of HP Prime graphing calculator programs to convert between delta and y resistor configurations, and display the result graphically.
 
 ## Delta and Y Resistor Configurations?
 
@@ -16,7 +16,7 @@ On CAS mode, type **DtoY(ra, rb, rc)**, where ra, rb and rc are resistor values 
 counter-clockwise. Press "Enter" to show graphical result. Then press "Esc" to resume CAS mode.
 
 example: DtoY(1,2,3)
-  result:
+  output:
 
 ![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/DtoY_Example.PNG "DtoY usage example")
 
@@ -26,7 +26,7 @@ On CAS mode, type **YtoD(ra, rb, rc)**, where ra, rb, and rc are resitor values 
 Press "Enter" to show graphical result. Then press "Esc" to resume CAS mode.
 
 example: YtoD(0.333333,1,0.5)
-  result:
+  output:
 
 ![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/YtoD_Example.PNG "YtoD usage example")
 
