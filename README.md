@@ -16,7 +16,7 @@ On CAS mode, type **DtoY(ra, rb, rc)**, where ra, rb and rc are resistor values 
 counter-clockwise. Press "Enter" to show graphical result. Then press "Esc" to resume CAS mode.
 
 example: DtoY(1,2,3)
-result:
+  result:
 
 ![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/DtoY_Example.PNG "DtoY usage example")
 
@@ -26,10 +26,14 @@ On CAS mode, type **YtoD(ra, rb, rc)**, where ra, rb, and rc are resitor values 
 Press "Enter" to show graphical result. Then press "Esc" to resume CAS mode.
 
 example: YtoD(0.333333,1,0.5)
-result:
+  result:
 
 ![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/YtoD_Example.PNG "YtoD usage example")
 
 ## Dependency Tree
 
-                     
+DtoY and YtoD take care of computations for resistor configuration conversions in each direction, while DRAW_TRIANGLE_AND_Y takes care of graphical output.
+
+![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/DeltaY_Converter_Dependancy_Tree.pdf "Project dependency tree")
+
+                   
