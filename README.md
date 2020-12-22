@@ -15,15 +15,17 @@ From left to right, the following image depicts delta and y resistor configurati
 On CAS mode, type **DtoY(ra, rb, rc)**, where ra, rb and rc are resistor values starting on the top edge of the delta configuration and going
 counter-clockwise. Press "Enter" to show graphical result. Then press "Esc" to resume CAS mode.
 
-  example: 
-    command: DtoY(1,2,3)
+example: DtoY(1,2,3)
+
+![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/DtoY_Example.PNG "DtoY usage example")
 
 ### Y to Delta
 
 On CAS mode, type **YtoD(ra, rb, rc)**, where ra, rb, and rc are resitor values starting on the left hand of the Y configuration and going counter-clockwise.
 Press "Enter" to show graphical result. Then press "Esc" to resume CAS mode.
 
-  example:
-    command: YtoD(0.333333,1,0.5)
+example: YtoD(0.333333,1,0.5)
+
+![alt text](https://github.com/Aswin-SaiSubramanian/Delta-Y-Resistor-Configuration-Converter/blob/main/YtoD_Example.PNG "YtoD usage example")
 
 ## Dependency Tree
