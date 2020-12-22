@@ -1,6 +1,7 @@
 # Delta-Y Resistor Configuration Converter
 
-A set of HP Prime graphing calculator programs to convert between delta and y resistor configurations, and display the result graphically.
+A set of HP Prime graphing calculator programs to convert between delta and y resistor configurations, and display the result graphically. To use, the executable files to
+to download are in the folder *src/Delta_Y_Converter*.
 
 ## Delta and Y Resistor Configurations?
 
