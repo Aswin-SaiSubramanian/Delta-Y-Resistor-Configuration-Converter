@@ -1,3 +1,6 @@
+// Author: Aswin Sai Subramanian
+// Date: 22 December 2020
+
 EXPORT DtoY(ra,rb,rc)
 BEGIN
    // Upside down triangle, ra on top.

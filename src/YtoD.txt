@@ -1,3 +1,6 @@
+// Author: Aswin Sai Subramanian
+// Date: 22 December 2020
+
 EXPORT YtoD(ra,rb,rc)
  // Y resistances (ra,rb,rc) CCW from 
  // top left segment.

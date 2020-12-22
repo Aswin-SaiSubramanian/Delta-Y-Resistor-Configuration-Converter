@@ -1,3 +1,6 @@
+// Author: Aswin Sai Subramanian
+// Date: 22 December 2020
+
 EXPORT DRAW_TRIANGLE_AND_Y(DtoY,
    ra, rb, rc,
    r1, r2, r3)
